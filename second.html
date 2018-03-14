@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"  initial-scale=1">
+<style>
+	form{
+  	  display: grid;
+   	  grid-template-columns: 200px 1fr;
+    
+	}
+img {
+opacity:0.7;
+filter: alpha(opacity=70);
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+.img{
+     opacity:0.2;
+     background-color:blue;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-size:100% 100%;
+     width: 100%;
+     height: 100%;
+
+  }
+
+body{
+	background-image:url("fly.jpg"); 
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:100%;
+}
+input[type=text], input[type=password] {
+    width: 80%;
+    padding: 10px 10px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: 1 px;
+}
+
+button {	
+
+    background-color:pink;
+    color: blue;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 1;
+}
+
+.cancelbtn {
+    background-color:pink;
+    color: blue;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+.signbtn{
+    float:right;
+    width: auto;
+    padding: 10px 18px;
+    background-color:skyblue;
+}
+
+.container {
+    margin-left: 80px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+  
+}
+span.psw {
+    float: left;
+    padding-top: 16px;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    margin: 5% auto 15% auto; 
+    width: 40%;
+}
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: skyblue;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: skyblue;
+    cursor: pointer;
+}
+.body {
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+@media screen and (max-width: 100%) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+#form_login {
+  max-width: 700px;
+    margin: auto;
+}
+button {
+height: 50px;
+width: 100px;
+}
+</style>
+</head>
+<body>
+  <form id="form_login">
+ 
+    <div class="imgcontainer">    
+
+    </div>
+	<center>
+    <div class="container">
+	<h1><center>LOGIN FORM</center></h1>
+	
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <button type="button" class="cancelbtn">Cancel</button><br>
+      <span class="psw"> <a href="#fly.jpg">Forgot password?</a></span>
+     <a href="signuppage.html"><button type="button" id="sgup" class="signbtn">SignUP</button></a>
+
+    </aside>
+    </div>
+</center>
+  </form>
+</body>
+</html>
